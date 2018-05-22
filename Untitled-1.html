@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+</head>
+<body>
+ <h1>TEST</h1>
+ <div id="test1" class="test">1</div>
+ <div id="test2" class="test">2</div>
+ <div id='comment'></div>
+ 
+ <script>
+     var comment = 'Hello,work!';
+  // selectors #, className, tagName
+  // getElementById
+  console.log(document.getElementById('test1'), 'find by id');
+  // getElementsByClassName
+  console.log(document.getElementsByClassName('test')[0], 'find by className');
+  var commentNode = document.getElementById('comment').cloneNode();
+  console.log(commentNode, 'This is node');
+  commentNode.innerText = comment;
+  console.log(commentNode,'This is node with comment');
+  document.getElementByID('cube').appendChild(commentNode);
+ </script>
+</body>
+</html>
