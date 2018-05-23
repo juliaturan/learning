@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <script src='index.js'></script>
+</head>
+<body>
+<div>
+        <div class="Window-header">
+                <div class="Close-button"></div>
+                <div class="Minimize-button"></div>
+                <div class="Fullscreen-button"></div>
+                <div class="Calendars-button">
+                    <div class="Text">Календари</div>
+                </div>
+                <div class="Button">
+                    <div class="Text1">&#11015</div>
+                </div>
+                <div class="Day-button">
+                    <div class="Day-text" >День</div>
+                </div>
+                <div class="Week-button switcher">
+                    <div class="Week-text">Неделя</div>
+                </div>
+                <div class="Month-button switcher">
+                    <div class="Month-text">Месяц</div>
+                </div>
+                <div class="Year-button">
+                    <div class="Year-text">Год</div>
+                </div>
+                <div class="Search-button">
+                    <div class="Search-text" style="text-align: justify-all">Поиск</div>
+                    <div class="lupa">&#128269</div>
+                </div>
+            </div>
+    <div class='Window-base'>
+            <div class="mail">mail</div>
+            <div class="square"></div>
+            <div class="Holidays-in-Russia">Holidays in Russia</div>
+            <div class="square2"></div>
+            <div class="yturandirectual">y.turan@directual.com</div>
+            <div id = '1'>
+                <script>buildMonth(5,2018)</script> 
+            </div>
+    </div>
+    <div class='Window-main'>
+        <div class="Year">2018</div>
+        <div>
+            <div class="Onerow">
+                    <div class="January" id = '2'>
+                            <script>buildMonth(0,2018)</script>
+                         </div>
+                    <div class="February" id = '3'>
+                                <script>buildMonth(1,2018)</script>
+                             </div>
+                    <div class="March" id = '4'>
+                                    <script>buildMonth(2,2018)</script>
+                                 </div>
+                    <div class="April" id = '5'>
+                                        <script>buildMonth(3,2018)</script>
+                                     </div>
+            </div>
+            
+            <div class="Tworow">
+                    <div class="May" id = '6'>
+                            <script>buildMonth(4,2018)</script>
+                         </div>
+                    <div class="June" id = '7'>
+                                <script>buildMonth(5,2018)</script>
+                             </div>
+                    <div class="July" id = '8'>
+                                    <script>buildMonth(6,2018)</script>
+                                 </div>
+                    <div class="August" id = '9'>
+                                        <script>buildMonth(7,2018)</script>
+                                     </div>
+            </div>
+
+            <div class="Threerow">
+                    <div class="September" id = '10'>
+                            <script>buildMonth(8,2018)</script>
+                         </div>
+                    <div class="October" id = '11'>
+                                <script>buildMonth(9,2018)</script>
+                             </div>
+                    <div class="November" id = '12'>
+                                    <script>buildMonth(10,2018)</script>
+                                 </div>
+                    <div class="December" id = '13'>
+                                        <script>buildMonth(11,2018)</script>
+                                     </div>
+    </div>
+</div>
+</div>

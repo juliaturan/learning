@@ -73,4 +73,17 @@ return table;
 
 function buildMonth(monthNumber,year) {
     document.getElementById('1').innerHTML = month(monthNumber,year);
+    document.getElementById('2').innerHTML = month(monthNumber,year);
+    document.getElementById('3').innerHTML = month(monthNumber,year);
+    document.getElementById('4').innerHTML = month(monthNumber,year);
+    document.getElementById('5').innerHTML = month(monthNumber,year);
+    document.getElementById('6').innerHTML = month(monthNumber,year);
+    document.getElementById('7').innerHTML = month(monthNumber,year);
+    document.getElementById('8').innerHTML = month(monthNumber,year);
+    document.getElementById('9').innerHTML = month(monthNumber,year);
+    document.getElementById('10').innerHTML = month(monthNumber,year);
+    document.getElementById('11').innerHTML = month(monthNumber,year);
+    document.getElementById('12').innerHTML = month(monthNumber,year);
+    document.getElementById('13').innerHTML = month(monthNumber,year);
+
 }

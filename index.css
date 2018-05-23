@@ -1,5 +1,5 @@
 
-.Window-Bar {
+.Window-header {
     width: 1280px;
     height: 45px;
     border-radius: 5px;
@@ -311,15 +311,15 @@ table {
         margin-left: 250px;
 }
 .February {
-    margin-top: -675px;
+    margin-top: -656px;
     margin-left: 500px;
 }
 .March {
-    margin-top: -675px;
+    margin-top: -656px;
     margin-left: 750px;
 }
 .April {
-    margin-top: -675px;
+    margin-top: -656px;
     margin-left: 1000px;
 }
 .May {
@@ -327,15 +327,15 @@ table {
     margin-left: 250px;
 }
 .June {
-    margin-top: -675px;
+    margin-top: -656px;
     margin-left: 500px;
 }
 .July {
-    margin-top: -675px;
+    margin-top: -656px;
     margin-left: 750px;
 }
 .August {
-    margin-top: -675px;
+    margin-top: -656px;
     margin-left: 1000px;
 }
 .September {
@@ -343,15 +343,15 @@ table {
     margin-left: 250px;
 }
 .October {
-    margin-top: -675px;
+    margin-top: -656px;
     margin-left: 500px;
 }
 .November {
-    margin-top: -675px;
+    margin-top: -656px;
     margin-left: 750px;
 }
 .December {
-    margin-top: -675px;
+    margin-top: -656px;
     margin-left: 1000px;
 }
 .bold {
