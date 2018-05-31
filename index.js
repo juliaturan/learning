@@ -57,33 +57,61 @@ res = '<tr>' + res + '</tr>';
   return res;
 }
 
+
+     var captions = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+     
 function month(monthNumber,year) {
-var table = '<table>' + row(1,monthNumber,year) +
+var table = '<div>'+'<table>'+'<th>' + captions[monthNumber] + '</th>' +
+ row(1,monthNumber,year) +
  row(2,monthNumber,year) +
  row(3,monthNumber,year) +
  row(4,monthNumber,year) +
  row(5,monthNumber,year) +
  row(6,monthNumber,year) +
  row(7,monthNumber,year) +
-'</table>';
+'</table>'
+'</div>';
    
     console.log(table)
 return table;
 }
 
-function buildMonth(monthNumber,year) {
+function buildMonthDop (monthNumber,year) {
     document.getElementById('1').innerHTML = month(monthNumber,year);
-    document.getElementById('2').innerHTML = month(monthNumber,year);
-    document.getElementById('3').innerHTML = month(monthNumber,year);
-    document.getElementById('4').innerHTML = month(monthNumber,year);
-    document.getElementById('5').innerHTML = month(monthNumber,year);
-    document.getElementById('6').innerHTML = month(monthNumber,year);
-    document.getElementById('7').innerHTML = month(monthNumber,year);
-    document.getElementById('8').innerHTML = month(monthNumber,year);
-    document.getElementById('9').innerHTML = month(monthNumber,year);
-    document.getElementById('10').innerHTML = month(monthNumber,year);
-    document.getElementById('11').innerHTML = month(monthNumber,year);
-    document.getElementById('12').innerHTML = month(monthNumber,year);
-    document.getElementById('13').innerHTML = month(monthNumber,year);
-
+}
+function buildMonthOne (monthNumber,year) {
+    document.getElementById('January').innerHTML = month(monthNumber,year);
+}
+function buildMonthTwo (monthNumber,year) {
+    document.getElementById('February').innerHTML = month(monthNumber,year);
+}
+function buildMonthThree (monthNumber,year) {
+    document.getElementById('March').innerHTML = month(monthNumber,year);
+}
+function buildMonthFour (monthNumber,year) {
+    document.getElementById('April').innerHTML = month(monthNumber,year);
+}
+function buildMonthFive (monthNumber,year) {
+    document.getElementById('May').innerHTML = month(monthNumber,year);
+}
+function buildMonthSix (monthNumber,year) {
+    document.getElementById('June').innerHTML = month(monthNumber,year);
+}
+function buildMonthSeven (monthNumber,year) {
+    document.getElementById('July').innerHTML = month(monthNumber,year);
+}
+function buildMonthEight (monthNumber,year) {
+    document.getElementById('August').innerHTML = month(monthNumber,year);
+}
+function buildMonthNine (monthNumber,year) {
+    document.getElementById('September').innerHTML = month(monthNumber,year);
+}
+function buildMonthTen (monthNumber,year) {
+    document.getElementById('October').innerHTML = month(monthNumber,year);
+}
+function buildMonthEleven (monthNumber,year) {
+    document.getElementById('November').innerHTML = month(monthNumber,year);
+}
+function buildMonthTwelve (monthNumber,year) {
+    document.getElementById('December').innerHTML = month(monthNumber,year);
 }

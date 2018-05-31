@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="test1">
+		<div id="test2">
+			<input type="button" value="кнопочка" onclick="onClick(event)" />
+		</div>
+	</div>
+
+
+	<div id="text1">Text1</div>
+	<div id="text2">Text2</div>
+
+
+	<input type="text" onkeyup="onChange(event)">
+
+	<shambola id="s">Shambola</shambola>
+	<script type="text/javascript">
+
+		var state = false;
+		
+		function onChange(event) {
+			console.log(event.target.value);
+		}
+
+
+		function onClick(event) {
+			console.log(event);
+
+			var t1 = document.getElementById('text1');
+			var t2 = document.getElementById('text2');
+
+			t1.style.display= 'block';
+			t2.style.display= 'block';
+
+			if(state) {
+				state = !state;
+				t1.style.display= 'none';
+				t2.style.display= 'block';				
+
+			}else {
+				state = !state;
+				t1.style.display= 'block';
+				t2.style.display= 'none';				
+			}
+		}
+
+
+		
+
+		var f = function(){console.log('Shambola')};
+
+		var s = document.getElementById('s');
+
+		window.addEventListener('click', function() {
+			console.log('click');
+
+			s.removeEventListener('mousemove', f);
+
+		});
+
+		s.addEventListener('mousemove', f);
+	</script>
+</body>
+</html>
